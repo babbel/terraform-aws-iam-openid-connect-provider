@@ -20,7 +20,7 @@ variable "iam_openid_connect_provider_tags" {
   default = {}
 
   description = <<EOS
-Map of tags assigned to the IAM OpenID Connect provider.
+Map of tags assigned to the IAM OpenID Connect provider created by this module. Tags in this map will override tags in `var.default_tags`.
 EOS
 }
 
