@@ -6,7 +6,7 @@ List of client IDs, also known as audiences.
 EOS
 }
 
-variable "tags" {
+variable "default_tags" {
   type    = map(string)
   default = {}
 
