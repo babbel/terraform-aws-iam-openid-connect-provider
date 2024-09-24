@@ -24,5 +24,5 @@ resource "aws_iam_openid_connect_provider" "this" {
     ).sha1_fingerprint,
   ]
 
-  tags = var.default_tags
+  tags = merge(var.default_tags, var.iam_openid_connect_provider_tags)
 }
